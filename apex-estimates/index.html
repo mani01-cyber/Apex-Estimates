@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Estimates | Precision Construction Estimating</title>
+    <meta name="description"
+        content="Apex Estimates provides highly accurate MEP estimating, bidding assistance, material takeoffs, and residential/commercial estimation to win your next big project.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Apex Estimates Logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#process">How It Works</a>
+                <a href="#testimonials">Testimonials</a>
+                <button class="btn btn-outline" onclick="openModal()">Get a Quote</button>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <div class="badge">Precision Meets Profitability</div>
+                <h1 class="hero-heading">Win More Bids with <span class="highlight">Unrivaled Accuracy</span></h1>
+                <p class="hero-subheading">Your trusted partner in detailed construction estimating. We provide fast,
+                    accurate, and reliable cost estimates so you can bid with absolute confidence.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large" onclick="openModal()">
+                        Start Estimating <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <a href="#services" class="btn btn-secondary btn-large">Our Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Accuracy Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">Turnaround</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">$1M+</span>
+                        <span class="stat-label">Estimated Value</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-graphics reveal">
+                <div class="glass-card aesthetic-card">
+                    <div class="card-header">
+                        <div class="dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div>Project: Alpha Tower</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="line-item">
+                            <span>MEP Systems</span>
+                            <span class="val">$1.15M</span>
+                        </div>
+                        <div class="line-item">
+                            <span>Material Takeoff</span>
+                            <span class="val">$850K</span>
+                        </div>
+                        <div class="line-item">
+                            <span>Labor</span>
+                            <span class="val">$150K</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="line-item total">
+                            <span>Total Estimate</span>
+                            <span class="val highlight-text">$2.15M</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                        <p class="status">Confidence Score: <strong>High</strong></p>
+                    </div>
+                </div>
+                <!-- Abstract glowing orbs -->
+                <div class="glow-orb orb-1"></div>
+                <div class="glow-orb orb-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Who We Are</h2>
+                <p class="section-subtitle">We bridge the gap between architectural vision and financial reality.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h3>Built on Trust, Driven by Data.</h3>
+                    <p>At Apex Estimates, we understand that a successful construction project begins long before the
+                        first shovel hits the ground. It begins with the numbers.</p>
+                    <p>Our team of seasoned estimators utilizes cutting-edge software and decades of industry experience
+                        to deliver comprehensive bids that protect your margins and win you jobs.</p>
+                    <ul class="core-values">
+                        <li><i class="fas fa-check-circle"></i> <strong>Precision:</strong> Down to the last nail.</li>
+                        <li><i class="fas fa-bolt"></i> <strong>Speed:</strong> Because deadlines don't wait.</li>
+                        <li><i class="fas fa-handshake"></i> <strong>Integrity:</strong> Transparent, honest costing.
+                        </li>
+                        <li><i class="fas fa-chart-line"></i> <strong>Growth:</strong> Helping you scale your business.
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-image reveal">
+                    <div class="image-wrapper">
+                        <!-- We will use a CSS gradient/pattern to represent analytics in construction -->
+                        <div class="abstract-graphic">
+                            <div class="blueprint-line h1"></div>
+                            <div class="blueprint-line h2"></div>
+                            <div class="blueprint-line v1"></div>
+                            <div class="blueprint-line v2"></div>
+                            <div class="data-node n1"><i class="fas fa-calculator"></i></div>
+                            <div class="data-node n2"><i class="fas fa-hard-hat"></i></div>
+                            <div class="data-node n3"><i class="fas fa-drafting-compass"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <div class="badge badge-center">What We Do</div>
+                <h2 class="section-title">Comprehensive Estimating Services</h2>
+                <p class="section-subtitle">Tailored solutions for contractors, builders, and architects.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal" style="transition-delay: 0ms;">
+                    <div class="service-icon"><i class="fas fa-plug"></i></div>
+                    <h3>MEP Estimating</h3>
+                    <p>Detailed Mechanical, Electrical, and Plumbing takeoffs ensuring no critical system component is
+                        overlooked.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card reveal" style="transition-delay: 100ms;">
+                    <div class="service-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h3>Bidding Assistance</h3>
+                    <p>Strategic bid preparation, review, and submission support to maximize your win-rate.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card reveal" style="transition-delay: 200ms;">
+                    <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Material Takeoffs</h3>
+                    <p>Exhaustive quantification of all construction materials needed, optimizing your procurement
+                        process.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card reveal" style="transition-delay: 300ms;">
+                    <div class="service-icon"><i class="fas fa-city"></i></div>
+                    <h3>Residential & Commercial</h3>
+                    <p>From single-family homes to massive high-rise commercial structures, we have the expertise to
+                        estimate it.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Things Work Section -->
+    <section class="process section-padding" id="process">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <h2 class="section-title">Our Streamlined Process</h2>
+                <p class="section-subtitle">From blueprints to final bid in 4 simple steps.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-step reveal">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Submit Plans</h3>
+                        <p>Send us your blueprints, drawings, and specifications securely.</p>
+                    </div>
+                </div>
+                <div class="timeline-step reveal">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Analyze & Review</h3>
+                        <p>Our experts analyze the scope, identify discrepancies, and formulate a strategy.</p>
+                    </div>
+                </div>
+                <div class="timeline-step reveal">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Detailed Takeoff</h3>
+                        <p>We perform an exhaustive quantification of materials, labor, and equipment.</p>
+                    </div>
+                </div>
+                <div class="timeline-step reveal">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Final Estimate Delivered</h3>
+                        <p>Receive a clear, formatted, and bid-ready estimate delivered to your inbox.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Don't just take our word for it.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Apex Estimates completely transformed our bidding process. Their material takeoffs
+                        are staggeringly accurate, saving us thousands on over-ordering. Highly recommended."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">JD</div>
+                        <div>
+                            <h4>James Donovan</h4>
+                            <p>Donovan Build Co.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay: 100ms;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Their MEP estimating team caught several critical design overlaps that the
+                        engineers missed. They didn't just give us a price; they saved the project timeline."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">SR</div>
+                        <div>
+                            <h4>Sarah Reynolds</h4>
+                            <p>Reynolds & Sons Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA & Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-top reveal">
+                <div class="footer-cta">
+                    <h2>Ready to Win Your Next Bid?</h2>
+                    <p>Contact us today for a free consultation and sample estimate.</p>
+                </div>
+                <div class="footer-contact-form">
+                    <form action="https://formsubmit.co/muhammadsulemanmalik25@gmail.com" method="POST"
+                        class="glass-form">
+                        <!-- Replace your-email@example.com with actual email -->
+                        <input type="hidden" name="_subject" value="New Inquiry from Apex Estimates Website!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="4" placeholder="Tell us about your project..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Apex Estimates Logo" class="logo-img">
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+                <p class="copyright">&copy; 2026 Apex Estimates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h2>Request a Quote</h2>
+                <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+            </div>
+            <form action="https://formsubmit.co/muhammadsulemanmalik25@gmail.com" method="POST" class="modal-form">
+                <input type="hidden" name="_subject" value="Quote Request from Apex Estimates">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" name="first_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" name="last_name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Service Needed</label>
+                    <select name="service">
+                        <option value="mep">MEP Estimating</option>
+                        <option value="bidding">Bidding Assistance</option>
+                        <option value="materials">Material Takeoffs</option>
+                        <option value="commercial">Commercial Estimation</option>
+                        <option value="residential">Residential Estimation</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Project Details / Links to Plans</label>
+                    <textarea name="details" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
